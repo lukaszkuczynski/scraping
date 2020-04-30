@@ -16,7 +16,7 @@ class MediumtopicSpider(scrapy.Spider):
         for h3_html in h3_sel.getall()[:MAX_HEADERS]:
             soup = BeautifulSoup(h3_html, 'html.parser')
             yield {
-                "text": soup.h3.text,
+                "header": soup.h3.text,
                 "link": soup.a['href']
             }
 
