@@ -6,6 +6,7 @@ MAX_HEADERS = 8
 
 class MediumtopicSpider(scrapy.Spider):
     name = 'mediumtopic'
+    topic = ""
 
     def start_requests(self):
         yield scrapy.Request('https://medium.com/topic/%s' % self.topic)
