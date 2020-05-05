@@ -4,3 +4,4 @@ __pycache__
 *.zip
 .vscode
 lambda-package
+out.json
