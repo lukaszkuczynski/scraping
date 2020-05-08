@@ -1,0 +1,17 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: An AWS Serverless Specification template describing your function.
+Resources:
+  scraping2dynamo:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Handler: scraping2dynamo.handler
+      Runtime: python3.8
+      CodeUri: .
+      Description: ''
+      MemorySize: 128
+      Timeout: 10
+      Role: 'arn:aws:iam::386790873405:role/lambda_dynamo_role'
+      Environment:
+        Variables:
+          SCRAPINGHUB_KEY: 3d8fa047d9d04f86ac45a7e6da2b57ae
