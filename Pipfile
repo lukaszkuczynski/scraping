@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 scrapy = "~=2.7"
 beautifulsoup4 = "*"
+scrapy-playwright = "*"
 
 [dev-packages]
 
