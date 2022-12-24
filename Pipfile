@@ -7,6 +7,7 @@ name = "pypi"
 scrapy = "~=2.7"
 beautifulsoup4 = "*"
 scrapy-playwright = "*"
+selenium = "*"
 
 [dev-packages]
 
