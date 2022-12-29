@@ -5,7 +5,13 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 
-driver = webdriver.Chrome()
+from selenium.webdriver.firefox.options import Options
+options = Options()
+options.headless = True
+driver = webdriver.Firefox(options=options)
+
+
+# driver = webdriver.Chrome()
 
 driver.get(URL)
 driver.execute_script("window.scrollTo(0,document.body.scrollHeight);")
